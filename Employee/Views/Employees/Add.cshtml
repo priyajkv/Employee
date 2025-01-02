@@ -1,0 +1,75 @@
+﻿@model Employee.Models.EmployeeViewModel;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>New Employee Registration Form </h1>
+<br />
+<form action="" method="post">
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control"asp-for="Name"required />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Gender</label>
+        <br />
+        <label>
+            <input type="radio" asp-for="Gender" value="Male" /> Male
+        </label>
+        <label>
+            <input type="radio" asp-for="Gender" value="Female" /> Female
+        </label>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">DateOfBirth</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth" required />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email" required />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Phone</label>
+        <input type="number" class="form-control" asp-for="Phone" required />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Country</label>
+        <select id="country" class="form-select" required asp-for="Country">
+            <option>India</option>
+            <option>Afghanistan</option>
+            <option>Australia</option>
+            <option>Bangaladesh</option>
+        </select>   
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">State</label>
+        <select id="state" class="form-select" required asp-for="State">
+            <option>TamilNadu</option>
+            <option>Gujarat</option>
+            <option>Assam</option>
+            <option>Bihar</option>
+        </select>   
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">City</label>
+        <select id="city" class="form-select" required asp-for="City">
+            <option>Chennai</option>
+            <option>Trichi</option>
+            <option>Goa</option>
+            <option>Maduarai</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <input type="checkbox" class="form-check" required />
+        <label for="" class="form-label">Do you Want to Save</label>
+     </div>
+
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+    
+
+</form>
